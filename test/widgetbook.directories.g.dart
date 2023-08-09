@@ -8,10 +8,9 @@
 // AppGenerator
 // **************************************************************************
 
-import 'asset:widgetbook_test_setup/test/widgets/test_field_widget_test.dart';
-import 'dart:core';
-import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
+import 'widgets/modal_button_test.dart';
+import 'widgets/test_field_widget_test.dart';
 
 final directories = [
   WidgetbookFolder(
@@ -21,12 +20,26 @@ final directories = [
         name: 'TestFieldWidget',
         useCases: [
           WidgetbookUseCase(
-            name: 'alibiOutlinedButtonDefault',
+            name: 'with a lot of text',
             builder: (context) => longTextTestFieldWidget(context),
           ),
           WidgetbookUseCase(
-            name: 'alibiOutlinedButtonDefault',
+            name: 'with no text',
             builder: (context) => noTextTestFieldWidget(context),
+          ),
+        ],
+      ),
+    ],
+  ),
+  WidgetbookFolder(
+    name: 'material',
+    children: [
+      WidgetbookComponent(
+        name: 'AlertDialog',
+        useCases: [
+          WidgetbookUseCase(
+            name: 'show modal on button click',
+            builder: (context) => alertDialogWidget(context),
           ),
         ],
       ),

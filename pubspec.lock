@@ -540,18 +540,19 @@ packages:
     dependency: "direct main"
     description:
       name: widgetbook_annotation
-      sha256: "3b7dbd3f326309845d023b586819b4aae7fbf5c8874cf1dfb92b303bb3ed96e4"
+      sha256: f6376e539ed2aab245ff876790e2fd8fa3b63faedc67b5bd61bfd1eb23bb998e
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0-rc.2"
+    version: "3.0.0"
   widgetbook_generator:
     dependency: "direct dev"
     description:
-      name: widgetbook_generator
-      sha256: "38694d74f3f683020e37bba7badd4c1f35d4d03d557ff03d0936806216c63a31"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.0-rc.2"
+      path: "packages/widgetbook_generator"
+      ref: "fix/asset-imports"
+      resolved-ref: "94c662afe10a727c0032af0c827f3006ec6e34d5"
+      url: "https://github.com/widgetbook/widgetbook.git"
+    source: git
+    version: "3.0.0"
   yaml:
     dependency: transitive
     description:
